@@ -43,7 +43,7 @@ export function Grid({isVisualizationRunningRef}: {isVisualizationRunningRef: Mu
         <div 
             className={twMerge(
                 // Basic structure
-                "flex flex-col items-center justify-center border-gray-600",
+                "flex flex-col items-center justify-center border-gray-600 mt-10",
                 // Grid height
                 `lg:min-h-[${MAX_ROWS * 17}px] md:min-h-[${MAX_ROWS * 15}px] sm:min-h-[${MAX_ROWS * 8}px] min-h-[${MAX_ROWS * 7}px]`,
                 // Grid width
