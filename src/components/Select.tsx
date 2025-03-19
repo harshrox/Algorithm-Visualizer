@@ -1,4 +1,5 @@
 import { ChangeEvent } from "react";
+import { SpeedType } from "../utils/types";
 
 export function Select({
     value, 
@@ -7,27 +8,31 @@ export function Select({
     label,
     isDisabled
 }: {
-    value: string | number;
+    value: string | number | SpeedType;
     onChange: (value: ChangeEvent<HTMLSelectElement>) => void;
-    options: {value: string | number; name: string}[];
+    options: {value: string | number | SpeedType; name: string}[];
     label: string;
-    isDisabled: boolean
+    isDisabled: boolean;
 }) {
     return (
-        <div className="flex flex-col items-start gap-1">
-            <label className="text-xs text-gray-300 ml-1" htmlFor={label}>
-                {label}     
+        <div className="flex flex-col items-start gap-2 w-full">
+            <label className="text-sm font-semibold text-gray-300 ml-1 tracking-wide" htmlFor={label}>
+                {label}
             </label>
 
             <select
                 disabled={isDisabled}
-                className="bg-blue-900 text-gray-300 cursor-pointer hover:bg-gray-800 transition ease-in active:ring-0 active:border-0 p-2 min-w-[200px] sm:min-w-full"
                 id={label}
+                className="w-full py-3 pl-2 rounded-xl bg-gray-900 text-gray-200 border border-gray-700 
+                           shadow-md transition-all duration-300 ease-in-out 
+                           hover:border-blue-400 hover:shadow-lg hover:bg-gray-800 
+                           focus:outline-none focus:ring-2 focus:ring-blue-500 
+                           disabled:opacity-50 disabled:cursor-not-allowed"
                 value={value}
                 onChange={onChange}
             >
                 {options.map((option) => (
-                    <option key={option.value} value={option.value}>
+                    <option key={option.value} value={option.value} className="bg-gray-900 text-gray-200">
                         {option.name}
                     </option>
                 ))}

@@ -55,3 +55,7 @@ export const isRowColEqual = (row: number, col: number, tile: TileType) => {
 export const sleep = (ms: number) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+export const getRandomInt = (left: number, right: number) => {
+    return Math.floor(Math.random() * (right - left + left));
+}

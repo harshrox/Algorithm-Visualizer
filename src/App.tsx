@@ -14,8 +14,12 @@ function App() {
       <TileProvider>
         <SpeedProvider>
           <div className='bg-slate-900 h-screen w-screen flex flex-col'>
-            <Nav />
-            <Grid isVisualizationRunningRef={isVisualizationRunningRef}/>
+            <Nav isVisualizationRunningRef={isVisualizationRunningRef}/>
+            <div className='flex flex-col md:flex-row justify-center'>
+              {/* <div className='w-full h-full'></div> */}
+              <Grid isVisualizationRunningRef={isVisualizationRunningRef}/>
+              {/* <div className='w-full h-full bg-black'></div> */}
+            </div>
           </div>
         </SpeedProvider>
       </TileProvider>

@@ -1,7 +1,7 @@
 import { MAX_COLS, MAX_ROWS } from "../../../utils/constants";
 import { createWall } from "../../../utils/createWall";
 import { destroyWall } from "../../../utils/destroyWall";
-import { isEqual, sleep } from "../../../utils/helpers";
+import { getRandomInt, isEqual, sleep } from "../../../utils/helpers";
 import { GridType, SpeedType, TileType } from "../../../utils/types";
 
 export const binaryTree = async (
@@ -37,7 +37,7 @@ export const binaryTree = async (
                 await destroyWall(grid, row, col, 0, speed);
             }
             else{
-                let randomNumber = Math.random() < 0.5 ? 0 : 1;
+                let randomNumber = getRandomInt(0, 2);
                 await destroyWall(grid, row, col, randomNumber, speed);
             }
         }
