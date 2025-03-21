@@ -68,7 +68,7 @@ export function Nav({isVisualizationRunningRef}: {isVisualizationRunningRef: Mut
 
     return (
         <div className="flex flex-col items-center justify-center min-h-[4.5rem] shadow-gray-600 sm:px-5 px-0 gap-10">
-            <h1 className="lg:flex w-[70%] justify-center text-3xl md:text-5xl underline text-white font-mono mt-10">
+            <h1 className="flex w-[100%] justify-center text-3xl md:text-5xl underline text-white font-mono mt-10">
                 Algorithm Visualizer
             </h1>
             <div className="flex items-center justify-center w-full sm:w-[52rem]">    
