@@ -11,7 +11,7 @@ export const a_star = (
 ) => {
     const traversedTiles: TileType[] = [];
 
-    // Use Maps to store g, h, and f values for each tile
+    
     const gMap = new Map<TileType, number>(); // g(n) - Cost from start
     const hMap = new Map<TileType, number>(); // h(n) - Heuristic
     const fMap = new Map<TileType, number>(); // f(n) = g(n) + h(n)
@@ -45,7 +45,7 @@ export const a_star = (
         const neighbors = getUntraversedNeighbors(grid, tile);
         for (let i = 0; i < neighbors.length; i++) {
             const neighbor = neighbors[i];
-            const newG = (gMap.get(tile) ?? Infinity) + 1; // Assuming uniform movement cost
+            const newG = (gMap.get(tile) ?? Infinity) + 1; 
 
             if (newG < (gMap.get(neighbor) ?? Infinity)) {
                 gMap.set(neighbor, newG);
