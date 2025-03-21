@@ -62,8 +62,10 @@ export function Nav({isVisualizationRunningRef}: {isVisualizationRunningRef: Mut
             setIsGraphVisualized(true);
             setIsDisabled(false);
             isVisualizationRunningRef.current = false;
-        }, (SLEEP_TIME / (SPEEDS.find((s) => s.value === speed)!.value == 0.5 ? 1.2 : 1.4)) * (traversedTiles.length + SLEEP_TIME * 2) + EXTENDED_SLEEP_TIME * (path.length + 60) * SPEEDS.find((s) => s.value === speed)!.value);
-        
+          }, 
+          (traversedTiles.length * SLEEP_TIME + path.length * EXTENDED_SLEEP_TIME) * 
+          (speed === 0.5 ? 1.1 : speed === 1 ? 1.6 : 2.1) + 100 // 100ms safety buffer
+          );
     }
 
     return (

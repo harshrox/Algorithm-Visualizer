@@ -15,7 +15,7 @@ export const animatePath = (
             if(!isEqual(tile, startTile) && !isEqual(tile, endTile)){
                 document.getElementById(`${tile.row}-${tile.col}`)!.className = `${TRAVERSED_TILE_STYLE} animate-traversed`;
             }
-        }, (SLEEP_TIME / (SPEEDS.find((s) => s.value === speed)!.value == 0.5 ? 1 : 1.4)) * i * SPEEDS.find((s) => s.value === speed)!.value);
+        }, (SLEEP_TIME * i * SPEEDS.find((s) => s.value === speed)!.value));
     }
 
     setTimeout(() => {
@@ -25,7 +25,7 @@ export const animatePath = (
                 if(!isEqual(tile, startTile) && !isEqual(tile, endTile)){
                     document.getElementById(`${tile.row}-${tile.col}`)!.className = `${PATH_TILE_STYLE} animate-path`;
                 }
-            }, (EXTENDED_SLEEP_TIME / (SPEEDS.find((s) => s.value === speed)!.value == 0.5 ? 1 : 1.4)) * i * SPEEDS.find((s) => s.value === speed)!.value);
+            }, (EXTENDED_SLEEP_TIME  * i * SPEEDS.find((s) => s.value === speed)!.value));
         }
-    }, (SLEEP_TIME / (SPEEDS.find((s) => s.value === speed)!.value == 0.5 ? 1.2 : 1.4)) * traversedTiles.length * SPEEDS.find((s) => s.value === speed)!.value);
+    }, (SLEEP_TIME  * traversedTiles.length * SPEEDS.find((s) => s.value === speed)!.value));
 }
