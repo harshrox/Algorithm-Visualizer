@@ -15,7 +15,7 @@ export function Select({
     isDisabled: boolean;
 }) {
     return (
-        <div className="flex flex-col items-start gap-2 w-full">
+        <div className="flex flex-col items-start gap-2 w-full select-none">
             <label className="text-sm font-mono text-gray-300 ml-1 tracking-wide" htmlFor={label}>
                 {label}
             </label>
@@ -27,7 +27,7 @@ export function Select({
                            shadow-md transition-all duration-300 ease-in-out 
                            hover:border-blue-400 hover:shadow-lg hover:bg-gray-800 
                            focus:outline-none focus:ring-2 focus:ring-blue-500 
-                           disabled:opacity-50 disabled:cursor-not-allowed"
+                           disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 value={value}
                 onChange={onChange}
             >

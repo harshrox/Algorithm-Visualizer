@@ -3,8 +3,8 @@ import { TRAVERSED_TILE_STYLE, TILE_STYLE, PATH_TILE_STYLE, WALL_TILE_STYLE, STA
 export function Info() {
     return (
         <>
-            <h2 className="text-lg font-mono border-b border-gray-600">Tile Legend</h2>
-            <div className="mt-4 space-y-3 font-mono">
+            <h2 className="text-lg font-mono border-b border-gray-600 cursor-default">Tile Legend</h2>
+            <div className="mt-4 space-y-3 font-mono cursor-default select-none">
                 <div className="flex items-center">
                     <div className={`${TRAVERSED_TILE_STYLE} w-6 h-6 rounded-sm mr-2`}></div>
                     <span>Traversed Tile</span>

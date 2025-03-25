@@ -12,67 +12,67 @@ export default {
         traversed: {
           "0%": {
             transform: "scale(0.4)",
-            backgroundColor: "#2d033bbf",
-            boxShadow: "0 0 2px #2d033b"
+            backgroundColor: "#2a0a4a",  
+            boxShadow: "0 0 3px #2a0a4a"
           },
           "30%": {
             transform: "scale(1.1)",
-            backgroundColor: "#3e065fbf",
-            boxShadow: "0 0 8px #3e065f"
+            backgroundColor: "#3f0e63", 
+            boxShadow: "0 0 8px #3f0e63"
           },
           "60%": {
             transform: "scale(0.9)",
-            backgroundColor: "#5a189abf",
-            boxShadow: "0 0 6px #5a189a"
+            backgroundColor: "#571089",  
+            boxShadow: "0 0 6px #571089"
           },
           "100%": {
             transform: "scale(1)",
-            backgroundColor: "#7b2cbf",
-            boxShadow: "0 0 4px #7b2cbf"
+            backgroundColor: "#7d1ebf",  
+            boxShadow: "0 0 5px #7d1ebf"
           }
         },
         path: {
           "0%": {
             transform: "scale(0.5)",
-            backgroundColor: "#1b1b2fbf",
-            opacity: "0.6",
-            boxShadow: "0 0 2px #1b1b2f"
+            backgroundColor: "#1d0b34",  
+            opacity: "0.7",
+            boxShadow: "0 0 3px #1d0b34"
           },
           "40%": {
             transform: "scale(1.2)",
-            backgroundColor: "#10002bbf",
-            opacity: "0.8",
-            boxShadow: "0 0 10px #10002b"
+            backgroundColor: "#2f0f4d",  
+            opacity: "0.85",
+            boxShadow: "0 0 10px #2f0f4d"
           },
           "70%": {
             transform: "scale(0.9)",
-            backgroundColor: "#3c096cbf",
+            backgroundColor: "#49107a",  
             opacity: "1",
-            boxShadow: "0 0 6px #3c096c"
+            boxShadow: "0 0 7px #49107a"
           },
           "100%": {
             transform: "scale(1)",
-            backgroundColor: "#5a189abf",
-            boxShadow: "0 0 4px #5a189a"
+            backgroundColor: "#6425a7",  
+            boxShadow: "0 0 5px #6425a7"
           }
         },
         wall: {
           "0%": {
             transform: "scale(0.6)",
-            backgroundColor: "#d8bfd8",
-            opacity: "0.5",
-            boxShadow: "0 0 2px #d8bfd8"
+            backgroundColor: "#2c0e50", 
+            opacity: "0.6",
+            boxShadow: "0 0 3px #2c0e50"
           },
           "50%": {
             transform: "scale(1.1)",
-            opacity: "0.8",
-            boxShadow: "0 0 6px #d8bfd8"
+            opacity: "0.85",
+            boxShadow: "0 0 6px #3a1070"
           },
           "100%": {
             transform: "scale(1)",
-            backgroundColor: "#3c096cbf",
+            backgroundColor: "#4b148a",  
             opacity: "1",
-            boxShadow: "0 0 8px #3c096c"
+            boxShadow: "0 0 8px #4b148a"
           }
         }
       },
