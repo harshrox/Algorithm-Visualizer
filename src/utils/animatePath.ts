@@ -27,5 +27,5 @@ export const animatePath = (
                 }
             }, (EXTENDED_SLEEP_TIME  * i * SPEEDS.find((s) => s.value === speed)!.value));
         }
-    }, (SLEEP_TIME  * traversedTiles.length * SPEEDS.find((s) => s.value === speed)!.value));
+    }, (SLEEP_TIME * traversedTiles.length * SPEEDS.find((s) => s.value === speed)!.value));
 }

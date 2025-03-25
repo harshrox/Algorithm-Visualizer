@@ -64,8 +64,8 @@ export function Nav({isVisualizationRunningRef}: {isVisualizationRunningRef: Mut
             isVisualizationRunningRef.current = false;
           }, 
           (traversedTiles.length * SLEEP_TIME + path.length * EXTENDED_SLEEP_TIME) * 
-          (speed === 0.5 ? 1.1 : speed === 1 ? 1.6 : 2.1) + 100 // 100ms safety buffer
-          );
+          (speed === 0.5 ? 0.8 : speed === 1 ? 1.3 : 2.2) + 100 // 100ms safety buffer
+        );
     }
 
     return (

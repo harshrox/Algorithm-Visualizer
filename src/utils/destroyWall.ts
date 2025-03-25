@@ -1,6 +1,5 @@
-import { SPEEDS, TILE_STYLE } from "./constants";
 import { destroyRowCol } from "./destroyRowCol";
-import { GridType, SpeedSelectType, SpeedType } from "./types";
+import { GridType, SpeedType } from "./types";
 
 export const destroyWall = async (
     grid: GridType,
