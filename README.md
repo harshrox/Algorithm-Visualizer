@@ -34,8 +34,8 @@ Follow these instructions to set up the project locally.
 
 Ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (recommended version)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Node.js](https://nodejs.org/) 
+- [npm](https://www.npmjs.com/)
 
 ### Installation
 
