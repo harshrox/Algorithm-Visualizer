@@ -6,6 +6,7 @@ import { SpeedProvider } from './contexts/SpeedContext'
 import { Grid } from './components/Grid'
 import { Nav } from './components/Nav'
 import { Info } from './components/Info'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const isVisualizationRunningRef = useRef(false);
@@ -29,6 +30,7 @@ function App() {
               </div>
             </div>
           </div>
+          <Analytics/>
         </SpeedProvider>
       </TileProvider>
     </PathfindingProvider>
